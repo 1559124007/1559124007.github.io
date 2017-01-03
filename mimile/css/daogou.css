@@ -1,0 +1,17 @@
+.bank{
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	background: #F8F8F8;
+}
+.bank .banner{
+	height: 572px;
+	margin: 0 auto;
+	text-align: center;
+	background: rgba(0,0,0,0) url(../img/04805186565664228.jpg) no-repeat scroll center top;
+	
+}
+.bank .img{
+	width: 1000px;
+	margin: 0 auto;
+}

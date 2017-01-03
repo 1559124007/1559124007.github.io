@@ -1,0 +1,205 @@
+html,
+body {
+	background: #fff none repeat scroll 0 0;
+	color: #666;
+	font-family: Tahoma, Helvetica, "Microsoft Yahei", "微软雅黑", Arial, STHeiti;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.point{
+	position: relative;
+	top: -3px;
+	left: 2px;
+}
+.wrapper {
+	height: auto;
+	margin: 0 auto;
+	width: 1000px;
+	margin-top: 40px;
+}
+
+.header {
+	overflow: hidden;
+}
+
+.header img {
+	float: left;
+}
+
+.header h3 {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: normal;
+	float: left;
+	margin: 27px 0 0 1px;
+}
+
+.header .point {
+	display: inline-block;
+	float: right;
+	font-size: 12px;
+	margin-top: 70px;
+}
+
+.header .point a {
+	text-decoration: none;
+	color: #3F69A3;
+}
+
+.content {
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 1px -2px 20px rgba(0, 0, 0, 0.1) inset;
+}
+
+.zcTitle {
+	text-align: center;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.zcTitle h2 {
+	display: inline-block;
+	color: #E02423;
+	font-size: 22px;
+	font-weight: normal;
+	margin: 0;
+	padding: 7px 20px;
+	border-bottom: 2px solid #E02423;
+	cursor: pointer;
+}
+
+.nc-login-content {
+	width: 400px;
+	margin: 10px auto;
+	background: #F9F9F9;
+}
+
+.nc-login-content p {
+	padding: 20px 0 8px 0;
+	margin: 0;
+}
+
+.nc-login-content p input {
+	height: 40px;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	border: 1px solid #E6E6E6;
+	padding-left: 10px;
+}
+
+.nc-login-content p .ncInput1 {
+	width: 388px;
+}
+
+.nc-login-content p .ncInput2 {
+	width: 148px;
+}
+
+.identifyCode img {
+	position: relative;
+	top: 6px;
+	left: 8px;
+}
+
+.identifyCode span {
+	margin-left: 12px;
+}
+
+.nc-login-content p .reget {
+	width: 148px;
+	height: 42px;
+	background: #F4F4F4;
+	color: #777;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.nc-login-content .reading_protocol {
+	padding: 8px 0 0 0;
+}
+
+.nc-login-content .reading_protocol input {
+	vertical-align: middle;
+}
+
+.nc-login-content .reading_protocol span {
+	vertical-align: middle;
+	font-size: 12px;
+}
+
+.nc-login-content .reading_protocol a {
+	text-decoration: none;
+	color: #CE3801;
+	font-weight: bold;
+}
+
+.nc-login-content .ncInput3 {
+	padding: 10px 0 20px 0;
+}
+
+.nc-login-content .ncInput3 input {
+	background: #E02323;
+	color: #FFFFFF;
+	width: 400px;
+	font-size: 24px;
+}
+
+.footer {
+	clear: both;
+	text-align: center;
+	color: #666666;
+	font-size: 12px;
+	margin-top: 60px;
+}
+
+.footer p a {
+	text-decoration: none;
+	color: #666;
+	padding: 0 1PX;
+}
+
+.footer p:nth-of-type(2) {
+	margin: -4px;
+}
+
+.footer img {
+	margin-top: 20px;
+	width: 130px;
+}
+
+
+#phonenumber{
+	position: absolute;
+	left: 880px;
+	top: 258px;
+	font-size: 12px;
+}
+#password{
+	position: absolute;
+	left: 880px;
+	top: 329px;
+	font-size: 12px;
+}
+#yanzhengma{
+	position: absolute;
+	left: 880px;
+	top: 400px;
+	font-size: 12px;
+}
+#message{
+	position: absolute;
+	left: 880px;
+	top: 470px;
+	font-size: 12px;
+}
+#tuijian{
+	position: absolute;
+	left: 880px;
+	top: 545px;
+	font-size: 12px;
+}
+#checked{
+	position: absolute;
+	left: 880px;
+	top: 605px;
+	font-size: 12px;
+}

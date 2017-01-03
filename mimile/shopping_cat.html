@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>填写收货信息</title>
+		<link rel="stylesheet" type="text/css" href="css/shopping_cat.css" />
+	</head>
+
+	<body>
+		<div id="" class="ncc-head container">
+			<a href="index.html"><img src="img/label.png" /></a>
+			<img src="img/shopping_status.png" />
+		</div>
+		<div class="container">
+			<div class="liucheng">
+				我的购物车
+				<p>查看购物车商品清单，增加减少商品数量，点击提交订单进入下一步操作。</p>
+			</div>
+			<div class="mat10">
+				<form id="form" method="post">
+					<div class="gouwuche">
+						<table class="gwc_tb" border="0" cellspacing="0" cellpadding="0" width="100%">
+							<tr>
+								<th style="padding-left:30px" width="60">商品图片</th>
+								<th>商品名称</th>
+								<th width="160">单价(元)</th>
+								<th width="110">购买数量</th>
+								<th width="100">操作</th>
+							</tr>
+							<tr class="product_id" id="pingguo7yin" style="display: none;">
+								<td class="hotimg" style="padding-left:20px;padding-right:0">
+									<img src="img/Iphone7.jpg">
+								</td>
+								<td style="text-align:left;padding-left:0">
+									<a class="cblue " href="#" target="_blank">
+										苹果Apple iPhone 7Plus 银色 128G</a>
+								</td>
+								<td class="strong">6800.00</td>
+								<td class="shuliang" style="padding-left:10px;">
+									<span class="img1 subtract">-</span>
+									<div class="shuliang_box">
+										<input class="product_num[1]" value="1" readonly="" type="text">
+									</div>
+									<span class="img1 img2 sum">+</span>
+								</td>
+								<td>
+									<a class="remove_tr" href="javaScript:;">删除</a>
+								</td>
+							</tr>
+							<tr class="product_id">
+								<td class="hotimg" style="padding-left:20px;padding-right:0">
+									<img src="img/DELL.png">
+								</td>
+								<td style="text-align:left;padding-left:0">
+									<a class="cblue " href="#" target="_blank">
+										戴尔(DELL)Ins15UR-3528L 15.6蓝
+									</a>
+								</td>
+								<td class="strong">4199.00</td>
+								<td class="shuliang" style="padding-left:10px;">
+									<span class="img1 subtract">-</span>
+									<div class="shuliang_box">
+										<input class="product_num[1]" value="1" readonly="" type="text">
+									</div>
+									<span class="img1 img2 sum">+</span>
+								</td>
+								<td>
+									<a class="remove_tr" href="javaScript:;">删除</a>
+								</td>
+							</tr>
+							<tr class="product_id">
+								<td class="hotimg" style="padding-left:20px;padding-right:0">
+									<img src="img/xiaomi4_white.jpg">
+								</td>
+								<td style="text-align:left;padding-left:0">
+									<a class="cblue " href="#" target="_blank">小米 4 2GB内存版 白色 联通4G手机</a>
+								</td>
+								<td class="strong">699.00</td>
+								<td class="shuliang" style="padding-left:10px;">
+									<span class="img1 subtract">-</span>
+									<div class="shuliang_box">
+										<input class="product_num[1]" value="1" readonly="" type="text">
+									</div>
+									<span class="img1 img2 sum">+</span>
+								</td>
+								<td>
+									<a class="remove_tr" href="javaScript:;">删除</a>
+								</td>
+							</tr>
+							<tr class="product_id" id="xiaomi4hei" style="display: none;">
+								<td class="hotimg" style="padding-left:20px;padding-right:0">
+									<img src="img/xiaomi4_black.jpg">
+								</td>
+								<td style="text-align:left;padding-left:0">
+									<a class="cblue " href="#" target="_blank">小米 4 2GB内存版 移动4G手机 黑色</a>
+								</td>
+								<td class="strong">1139.00</td>
+								<td class="shuliang" style="padding-left:10px;">
+									<span class="img1 subtract">-</span>
+									<div class="shuliang_box">
+										<input class="product_num[1]" value="1" readonly="" type="text">
+									</div>
+									<span class="img1 img2 sum">+</span>
+								</td>
+								<td>
+									<a class="remove_tr" href="javaScript:;">删除</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="fukuan">
+						<div class="fl" style="padding:5px 10px">
+							可获得积分：
+							<span id="order_point_get" class="cgreen">1286</span> 点
+						</div>
+						<div class="fk_tb">
+							<table width="100%" cellspacing="0" cellpadding="0" border="0">
+								<tbody>
+									<tr>
+										<td>商品金额：</td>
+										<td class="num" width="80">
+											¥
+											<span id="order_product_money">12837.0</span>
+										</td>
+									</tr>
+									<tr>
+										<td>运费：</td>
+										<td class="num ">
+											¥
+											<span id="order_wl_money">20.0</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											优惠券：
+											<select name="order_quan_id">
+												<option value="0" quan_money="0.0">不使用优惠券</option>
+											</select>
+										</td>
+										<td class="num num2">
+											- ¥
+											<span id="order_quan_money">0.0</span>
+										</td>
+									</tr>
+									<tr>
+										<td valign="middle">
+											<input id="point_btn" class="fr mat2 mar5" type="checkbox" style="position: relative;top: 3px;">
+											<span class="fr">您账户有 0 积分，可抵现 0 元</span>
+											<div class="clear"></div>
+											<!--<div id="point_html" style="display:none">
+												使用
+												<input class="jf_input" name="order_point_use" type="text"> 积分
+											</div>-->
+										</td>
+										<td class="num num2">
+											- ¥
+											<span id="order_point_money">0.0</span>
+										</td>
+									</tr>
+									<tr>
+										<td>应付金额：</td>
+										<td class="num strong">
+											¥
+											<span id="order_money">12857</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<a href="settlement.html"><input type="button" value="结算" class="btn_05" /></a>
+				</form>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="footer_background">
+				<div class="footer_content container">
+					<div class="footer_content_left">
+						<span>购物指南</span>
+						<ul>
+							<li>礼品卡的购买与使用</li>
+							<li>无法收到邮件？</li>
+							<li>关于捷信分期</li>
+							<li>邮费制度</li>
+							<li>订单状态说明</li>
+						</ul>
+					</div>
+					<div class="footer_content_left">
+						<span>支付方式</span>
+						<ul>
+							<li>支付问题</li>
+							<li>在线支付</li>
+							<li>活到付款</li>
+							<li>营销推广</li>
+						</ul>
+					</div>
+					<div class="footer_content_left">
+						<span>配送与服务</span>
+						<ul>
+							<li>申请售后退款说明</li>
+							<li>取消订单退款说明</li>
+							<li>装机与维修服务</li>
+							<li>退换货流程</li>
+							<li>第三方配送</li>
+						</ul>
+					</div>
+					<div class="footer_content_left footer_content_four">
+						<span>商家入驻</span>
+						<ul>
+							<li>小米鸽（兼职招聘）</li>
+							<li>广告位管理与流程</li>
+							<li>活动组织与流程</li>
+							<li>如何发货</li>
+							<li>我要开店</li>
+						</ul>
+					</div>
+					<div class="bottom_right">
+						<div class="footer_center">
+							<h3>客服中心</h3>
+							<p>4006-780-781</p>
+							<p>E-mail:mmloo@mmloo.com</p>
+							<p>四川省成都市新南路亚华大厦</p>
+							<p><img src="img/qq_index.gif" />006780781</p>
+						</div>
+						<div class="footer_right">
+							<a>关于米米乐商城</a>
+							<img src="img/scmmloo.png" />
+							<p>手机下单更优惠</p>
+							<p>快乐网购 轻松拥有</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer_bottom_nav container">
+				<a href="">网上商城 </a>
+				<a href="">免费信息发布 </a>
+				<a href="">客栈网 </a>
+				<a href="">乐天代购</a>
+				<a href="">蛋糕网上订购</a>
+				<a href="">吃喝玩乐</a>
+				<a href="">1688批发网</a>
+				<a href="">深圳童装批发</a>
+				<a href="">中国皮革网</a>
+				<a href="">户外装备</a>
+				<a href="">饰品批发</a>
+				<a href="">惠爱你 </a>
+				<a href="">网上订花</a>
+				<a href="">美容加盟</a>
+				<a href="">户外用品</a>
+				<a href="">外贸童装批发网</a>
+				<a href="">礼品册</a>
+				<a href="">促销活动</a>
+				<a href="">日日顺净水商城</a>
+				<a href="">舒华跑步机</a>
+				<a href="">冰柜</a>
+				<a href="">制造资源</a>
+				<a href="">整体衣柜</a>
+				<a href="">仪器仪表世界网</a>
+				<a href="">LED</a>
+				<a href="">中国供应商</a>
+				<a href="">十大品牌</a>
+				<a href="">触摸屏网与液晶网</a>
+				<a href="">洛阳分类信息</a>
+				<a href="">千金商务网</a>
+				<a href="">牛商网</a>
+				<a href="">大连房产网</a>
+				<a href="">洁具</a>
+				<a href="">白酒代理</a>
+				<a href="">百川网</a>
+				<a href="">常州租房</a>
+				<a href="">石家庄房产网</a>
+				<a href="">1688货源网</a>
+				<a href="">酒价格</a>
+				<a href="">童装代理</a>
+				<a href="">内增高鞋</a>
+				<a href="">珠宝店加盟</a>
+				<a href="">砭石</a>
+				<a href="">拼客网</a>
+				<a href="">微商代理货源网网</a>
+				<a href="">别墅图片大全</a>
+				<a href="">中国环保设备网</a>
+				<a href="">化妆品代理网</a>
+				<a href="">商祺网</a>
+				<a href="">连锁加盟网</a>
+				<a href=""> 楚天运动频道</a>
+			</div>
+			<div class="footer_bottom container">
+				<p>
+					<a href="#">电脑节</a>|
+					<a href="#">年货节</a>|
+					<a href="#">批发商城</a>|
+					<a href="#">合作及洽谈</a>|
+					<a href="#">联系我们</a>|
+					<a href="#">关于米米乐商城</a>|
+					<a href="#">商家登录</a>|
+					<a href="#">开店协议</a>|
+					<a href="#">商家入驻</a>|
+					<a href="#">手机版</a>|
+					<a href="#">友情链接</a>|
+					<a href="#">招聘英才</a>
+					<a href="#">米商</a>|
+					<a href="#">8.8包邮</a>|
+					<a href="#">电脑节</a>
+				</p>
+				<p>© 2016 www.mmloo.com 版权所有</p>
+				<img src="img/cxlogo.png" />
+			</div>
+		</div>
+		<script type="text/javascript" src="js/public_element.js"></script>
+		<script type="text/javascript">
+			function check_userinfo() {
+				var cookie = decodeURIComponent(document.cookie);
+				var str = cookie.split(";");
+				for(var i = 0; i < str.length; i++) {
+					if(str[i].split("=")[0].trim() === "pingguo7yin") {
+						$("#pingguo7yin").style.display = "";
+					}
+					if(str[i].split("=")[0].trim() === "xiaomi4hei") {
+						$("#xiaomi4hei").style.display = "";
+					}
+				}
+			}
+			check_userinfo();
+
+			var a = document.getElementsByClassName("remove_tr");
+			var b = document.getElementsByClassName("product_id");
+			for(i = 0; i < a.length; i++) {
+				a[i].index = i;
+				a[i].onclick = function() {
+					changeMode(this.index, "none");
+				}
+			}
+
+			function changeMode(iTarget, o) {
+				b[iTarget].style.display = o;
+			}
+
+			function computation() {
+				var a = $(".strong");
+				var b = $(".subtract");
+				var c = $(".sum");
+				var d=$("#order_product_money");
+				var e=$("#order_money");
+				var f=$(".product_num[1]");
+				var bool = [];
+				var m=[];
+				for(i = 0; i < b.length; i++) {
+					a[i].index = i;
+					b[i].index = i;
+					c[i].index = i;
+					f[i].index = i;
+					bool[i]="true";
+					b[i].onclick = function() {
+						changeMode(this.index, "-");
+					}
+					c[i].onclick = function() {
+						changeMode(this.index, "+");
+					}
+				}
+
+				function changeMode(iTarget, o) {
+					var sum1=0;;
+					var shop_value = parseFloat(a[iTarget].innerHTML);
+					var num = parseFloat(f[iTarget].value);
+					if(bool[iTarget]=="true") {
+						m[iTarget] =shop_value;
+						bool[iTarget]="false";
+					}
+					if(o === "+") {
+						a[iTarget].innerHTML = shop_value + m[iTarget];
+						f[iTarget].value = num+1;
+					}
+					if(o === "-") {
+						if(shop_value==0){
+							a[iTarget].innerHTML =0;
+							f[iTarget].value =0;
+						}else{
+							a[iTarget].innerHTML = shop_value - m[iTarget];
+							f[iTarget].value = num-1;
+						}						
+					}
+					for(i = 0; i <a.length-1; i++) {
+						var shop_value = parseFloat(a[i].innerHTML);
+						sum1+=shop_value;
+					}
+					d.innerHTML=sum1;
+					e.innerHTML=sum1+20;
+				}
+			}
+			computation();
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,108 @@
+html, body {
+    background: #fff none repeat scroll 0 0;
+    color: #666;
+    font-family: Tahoma,Helvetica,"Microsoft Yahei","微软雅黑",Arial,STHeiti;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    height: auto;
+    margin: 0 auto;
+    width: 920px;
+    margin-top: 40px;
+}
+.content{
+	margin-top: 22px;
+}
+.content_left{
+	float: left;
+	margin-top: 20px;
+}
+.content_right{
+	width: 320px;
+	height: 366px;
+	float: right;
+}
+.login_top p {
+	text-align: right;
+}
+.login_top p img{
+	position: relative;
+	top: 3px;
+}
+.login_top p a{
+	color: #666666;
+	font-size: 12px;
+	text-decoration: none;
+	
+}
+.input1{
+	width: 320px;
+	height: 38px;
+	border:1px solid #D0D0D0;
+	padding-left: 10px;	
+}
+.login_top2{
+	margin-top: 25px;
+}
+.login_middle{
+	color: #666666;
+	font-size: 12px;
+	margin-top: 13px;
+}
+.login_middle span{
+	text-align: right;
+	margin-left: 82px;
+}
+.login_middle span a{
+	color: #2E82FF;
+	text-decoration: none;
+}
+.zc{
+	margin-left: 5px;
+	border-left: 1px solid #2E82FF;
+	padding-left: 7px;
+}
+.but1{
+	width: 320px;
+	height: 40px;
+	background-color: #E52C2C;
+	border: 0;
+	border-radius: 4px;
+	color: #FFFFFF;
+	cursor:pointer;
+}
+.but1:hover{
+	background: #E51212;
+}
+.login_buttom{
+	color: #666666;
+	font-size: 12px;
+	margin-top: 40px;
+}
+.login_buttom_img{
+	height: 25px;
+	width: 200px;
+	background: url(../img/comms.png) no-repeat;
+	margin-top: 12px;
+}
+.footer{
+	clear: both;
+	text-align: center;
+	color: #666666;
+	font-size: 12px;
+	padding-top: 60px;
+}
+.footer p a{
+	text-decoration: none;
+	color: #666;
+	padding: 0 1PX;
+}
+.footer p:nth-of-type(2){
+	margin:-4px;
+}
+.footer img{
+	margin-top: 20px;
+	width: 130px;
+}

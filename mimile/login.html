@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录米米乐账号</title>
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div id="head">
+				<div class="mod-header">
+					<a href="index.html"><img src="img/label.png" alt="logo"></a>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="content_left">
+					<img src="img/ornament.jpg" />
+				</div>
+				<div class="content_right">
+					<div class="login_top">
+						<h4>登录米米乐账号</h4>
+						<p>
+							<img src="img/message.png" />
+							<a href="#">短信快捷登录</a>
+						</p>
+						<div class="login_top1">
+							<input id="username" class="input1" type="text" placeholder="手机/邮箱/用户名" />
+						</div>
+						<div class="login_top2">
+							<input id="password" class="input1" type="password" placeholder="密码" />
+						</div>
+					</div>
+					<div class="login_middle">
+						<input type="checkbox" id="checkbox" />
+						<label>下次自动登录</label>
+						<span>
+						<a href="#">登录遇到问题</a>
+						<a class="zc" href="register.html">立即注册</a>
+					</span>
+						<p class="bt">
+							<input id="btn" class="but1" type="button" value="登录" />
+						</p>
+					</div>
+					<div class="login_buttom">
+						<div>可以使用以下方式登录</div>
+						<div class="login_buttom_img">
+						</div>
+					</div>
+					</form>
+				</div>
+			</div>
+			<div class="footer">
+				<p>
+					<a href="#">电脑节</a>|
+					<a href="#">年货节</a>|
+					<a href="#">批发商城</a>|
+					<a href="#">合作及洽谈</a>|
+					<a href="#">联系我们</a>|
+					<a href="#">关于米米乐商城</a>|
+					<a href="#">商家登录</a>|
+					<a href="#">开店协议</a>|
+					<a href="#">商家入驻</a>|
+					<a href="#">手机版</a>|
+					<a href="#">友情链接</a>|
+					<a href="#">招聘英才</a>
+					<!--<a href="#">米商</a>|
+				<a href="#">8.8包邮</a>|
+				<a href="#">电脑节</a>-->
+				</p>
+				<p>© 2016 www.mmloo.com 版权所有</p>
+				<img src="img/cxlogo.png" />
+			</div>
+		</div>
+		<script type="text/javascript" src="js/public_element.js"></script>
+		<script type="text/javascript" src="js/alert_se.js"></script>
+		<script type="text/javascript">
+			var username = $("#username");
+			var password = $("#password");
+			var checkbox = $("#checkbox");
+			var btn = $("#btn");
+			var bool = false;
+			var boole = false;
+			btn.onclick = function() {
+				if(checkbox.checked == true) {
+					setCookie(username, password, "d10");
+				} else {
+					setCookie(username, password, -1);
+				}
+				console.log(document.cookie);
+				check_userinfo();
+				if(bool) {
+					alert('输入有误！');
+				}
+				if(boole) {
+					alert('请输入用户名或密码！');
+				}
+			}
+
+			function check_userinfo() {
+				var cookie = decodeURIComponent(document.cookie);
+				var str = cookie.split(";");
+				for(var i = 0; i < str.length; i++) {
+					if(username.value === str[i].split("=")[0].trim() && password.value === str[i].split("=")[1].trim()) {
+						location.href = "http://127.0.0.1:8020/mimile_LS/index.html";
+						bool = false;
+						boole = false;
+					} else if(username.value === "" || password.value === "") {
+						boole = true;
+					} else {
+						bool = true;
+					}
+				}
+			}
+			username.onblur = function() {
+				var cookie = decodeURIComponent(document.cookie);
+				var str = cookie.split(";");
+				for(var i = 0; i < str.length; i++) {
+					if(username.value === str[i].split("=")[0].trim()) {
+						password.value = str[i].split("=")[1].trim();
+					}
+				}
+			}
+
+			function setCookie(key, val, str) {
+				if(str[0] === "d") {
+					var str = str.slice(1, str.length);
+					str = parseInt(str) * 24 * 3600 * 1000;
+				} else if(str[0] === "h") {
+					var str = str.slice(1, str.length);
+					str = parseInt(str) * 3600 * 1000;
+				} else if(str[0] === "m") {
+					var str = str.slice(1, str.length);
+					str = parseInt(str) * 60 * 1000;
+				} else if(str[0] === "s") {
+					var str = str.slice(1, str.length);
+					str = parseInt(str) * 1000;
+				}
+				var now = new Date();
+				now.setTime(now.getTime() + str);
+				document.cookie = key.value + "=" + encodeURIComponent(val.value) + ";expires=" + now.toGMTString();
+			}
+		</script>
+	</body>
+
+</html>

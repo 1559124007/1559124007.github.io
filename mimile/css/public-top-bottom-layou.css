@@ -1,0 +1,128 @@
+html,
+body {
+	background: #fff none repeat scroll 0 0;
+	color: #666;
+	font-size: 12px;
+	font-family: Tahoma, Helvetica, "Microsoft Yahei", "微软雅黑", Arial, STHeiti;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	height: auto;
+	margin: 0 auto;
+	width: 1000px;
+}
+.footer_background{
+	background-color: #FAFAFA;
+	border: solid 1px #E6E6E6;
+}
+.footer_content {
+	overflow: hidden;
+}
+
+.footer_content div {
+	float: left;
+	overflow: hidden;
+}
+
+.footer_content_left {
+	margin-right: 10px;
+}
+
+.footer_content_left span {
+	font-size: 16px;
+	padding: 6px 80px 10px 5px;
+	border-bottom: solid 1px #E6E6E6;
+	display: block;
+}
+
+.footer_content_left ul {
+	margin: 10px 0 0 -21px;
+}
+
+.footer_content_left ul li {
+	margin: 6px 0;
+}
+.bottom_right{
+	float: right !important;
+}
+.footer_center {
+	border-left: solid 1px #E6E6E6;
+	border-right: solid 1px #E6E6E6;
+	background: #fff;
+	padding: 0 6px 14px 6px;
+}
+
+.footer_center p {
+	margin: 6px 0 10px 5px;
+}
+
+.footer_center p:first-of-type {
+	background: url(../img/call.gif) no-repeat scroll 0 5px ;
+	line-height: 25px;
+	color: #ff8a00;
+	font-size: 22px;
+	padding: 0 16px 0 30px;
+	margin-left: 0;
+}
+.footer_center p img{
+	vertical-align: middle;
+	margin-right: 4px;
+}
+.footer_center h3 {
+	font-size: 16px;
+	margin: 0;
+	font-size: 16px;
+	padding: 6px 80px 10px 5px;
+	border-bottom: solid 1px #E6E6E6;
+	display: block;
+}
+.footer_right{
+	text-align: center;
+	background: #fff;
+	padding: 0 6px 20px 6px; 
+}
+.footer_right a{
+	font-size: 16px;
+	padding: 6px 0px 10px 5px;
+	border-bottom: solid 1px #E6E6E6;
+	display: block;
+}
+.footer_right img {
+	display: block;
+	width: 60px;
+	margin:10px auto 0;
+}
+.footer_right p{
+	margin: 4px 0;
+}
+.footer_bottom_nav{
+	clear: both;
+	border-bottom: solid 1px #E6E6E6;
+}
+.footer_bottom_nav a{
+	text-decoration: none;
+	line-height: 30px;
+	padding: 5px;
+	color: #393F52;
+}
+.footer_bottom{
+	clear: both;
+	text-align: center;
+	color: #666666;
+	font-size: 12px;
+}
+.footer_bottom p a{
+	text-decoration: none;
+	color: #666;
+	padding: 0 1PX;
+}
+.footer_bottom p:nth-of-type(2){
+	margin:-4px;
+}
+.footer_bottom img{
+	margin-top: 20px;
+	width: 130px;
+}
